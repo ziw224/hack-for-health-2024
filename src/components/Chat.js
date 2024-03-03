@@ -9,7 +9,7 @@ const Chat = () => {
 
   // Check if a chat user has been selected
   const isChatSelected = data.user !== undefined && data.user !== null;
-
+  
   return (
     <div className="chat">
       {isChatSelected ? (
