@@ -1,0 +1,72 @@
+.mainHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.navigationBar {
+  display: flex;
+  justify-content: space-around; /* Use space-around for even spacing */
+  align-items: center;
+  width: 80%; /* Increase the width for more space */
+  max-width: 1200px; /* Set a max-width for very wide screens */
+  background-color: #3b5998;
+  padding: 20px 30px; /* Increase padding for more space */
+  border-radius: 30px; /* Slightly larger border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Center the navigation bar */
+}
+
+.navItems {
+  display: flex;
+  gap: 30px; /* Increase the gap for more space between links */
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 20px; /* Slightly larger font size for readability */
+  padding: 15px 25px; /* Increase padding for a larger clickable area */
+  border-radius: 15px; /* Slightly larger border-radius */
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #4b70dd;
+}
+
+.logoutButton {
+  background-color: #f44336; /* Logout button color */
+  color: white;
+  border: none;
+  padding: 15px 25px; /* Increase padding for a larger button */
+  font-size: 20px; /* Match the font size with the nav links */
+  border-radius: 15px; /* Rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logoutButton:hover {
+  background-color: #d32f2f; /* Darker shade on hover */
+}
+
+.appName {
+  text-align: left;
+  color: white;
+  font-size: 1.5rem; /* Adjust the size as needed */
+  margin-right: auto; /* Push everything else to the right */
+}
+
+.appName h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.appName p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
