@@ -7,6 +7,17 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 
+// Import your avatars or define their paths here
+// const avatars = [
+//   "./avatars/1.jpg",
+//   "./avatars/2.jpg",
+//   "./avatars/3.jpg",
+//   "./avatars/4.jpg",
+//   "./avatars/5.jpg",
+//   "./avatars/6.png",
+  
+// ];
+
 const Register = () => {
   const [err, setErr] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -76,8 +87,8 @@ const Register = () => {
             <span>Add an avatar</span>
           </label>
           <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
+          {loading && "Please wait..."}
+          {err && <span>Incorrect Password or Username</span>}
         </form>
         <p>
           You do have an account? <Link to="/login">Login</Link>

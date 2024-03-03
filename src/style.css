@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.formContainer .formWrapper {
+.formWrapper {
   background-color: white;
   padding: 20px 60px;
   border-radius: 10px;
@@ -16,44 +16,94 @@
   align-items: center;
 }
 
-.formContainer .formWrapper .logo {
+.logo {
   color: #5d5b8d;
   font-weight: bold;
   font-size: 24px;
 }
 
-.formContainer .formWrapper .title {
+.title {
   color: #5d5b8d;
   font-size: 12px;
 }
 
-.formContainer .formWrapper form {
+form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.formContainer .formWrapper form input {
+form input {
   padding: 15px;
   border: none;
   width: 250px;
   border-bottom: 1px solid #a7bcff;
 }
 
-.formContainer .formWrapper form input::placeholder {
+form input::placeholder {
   color: rgb(175, 175, 175);
 }
 
-.formContainer .formWrapper form button {
+
+.avatarAdd {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatarSidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px; /* Adjust based on your avatar size */
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.avatarSidebar img {
+  width: 100px; /* Adjust to fit your design */
+  margin: 10px 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.avatarSidebar img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+form button {
   background-color: #7b96ec;
   color: white;
   padding: 10px;
   font-weight: bold;
   border: none;
   cursor: pointer;
+  width: 100%; /* Make the button full width for consistency */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
-.formContainer .formWrapper form label {
+form button:hover {
+  background-color: #5d5b8d; /* Darker shade on hover */
+}
+
+form label {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -62,21 +112,19 @@
   cursor: pointer;
 }
 
-.formContainer .formWrapper form label img {
+form label img {
   width: 32px;
 }
 
-.formContainer .formWrapper p {
+p {
   color: #5d5b8d;
   font-size: 12px;
   margin-top: 10px;
 }
 
-/* Add this at the end of your CSS file or in the relevant section for form/input styling */
 .upload-success {
-  color: green; /* Feel free to change the color to fit your design */
-  font-size: 14px; /* Adjust the font size as needed */
-  margin-left: 10px; /* Provide some spacing from the input field or button */
-  display: inline-block; /* Or 'block' depending on your layout */
-  vertical-align: middle; /* Aligns well with input fields or buttons if inline-block */
+  color: green;
+  font-size: 14px;
+  margin-top: 10px; /* Ensure spacing above the success message for visibility */
+  display: block; /* Ensure it takes its own line for clear visibility */
 }
