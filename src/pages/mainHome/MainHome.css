@@ -3,61 +3,94 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f2f5;
+  background-color: rgb(134, 136, 210);
+  background-image: url('https://ketaminehealthcenters.com/wp-content/uploads/2022/03/shutterstock_1777236824-1080x675.jpg'); /* Background image */
+  background-size: cover; /* Ensures the image covers the whole area */
+  background-position: center; /* Centers the image in the container */
+  transform: scale(0.5); /* Adjusts the size of the image */
+  transform-origin: center; /* Ensures the scaling is centered */
   padding: 20px;
+  animation: slideIn  ease-out forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .navigationBar {
   display: flex;
-  justify-content: space-around; /* Use space-around for even spacing */
+  justify-content: space-around;
   align-items: center;
-  width: 80%; /* Increase the width for more space */
-  max-width: 1200px; /* Set a max-width for very wide screens */
-  background-color: #3b5998;
-  padding: 20px 30px; /* Increase padding for more space */
-  border-radius: 30px; /* Slightly larger border-radius */
+  width: 30%;
+  max-width: 1200px;
+  background-color: #26578c; /* You can also change this if you want */
+  padding: 20px 30px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: auto; /* Center the navigation bar */
+  margin: auto;
+  animation: fadeIn 1.5s ease-out; /* Fade-in animation for navigation bar */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .navItems {
   display: flex;
-  gap: 30px; /* Increase the gap for more space between links */
+  gap: 30px;
 }
 
 .navLink {
   color: white;
   text-decoration: none;
-  font-size: 20px; /* Slightly larger font size for readability */
-  padding: 15px 25px; /* Increase padding for a larger clickable area */
-  border-radius: 15px; /* Slightly larger border-radius */
-  transition: background-color 0.3s ease;
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added shadow transition */
 }
 
 .navLink:hover {
-  background-color: #4b70dd;
+  background-color: #878fe0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .logoutButton {
-  background-color: #f44336; /* Logout button color */
+  background-color: #f44336;
   color: white;
   border: none;
-  padding: 15px 25px; /* Increase padding for a larger button */
-  font-size: 20px; /* Match the font size with the nav links */
-  border-radius: 15px; /* Rounded edges */
+  padding: 15px 25px;
+  font-size: 20px;
+  border-radius: 15px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s ease; /* Added shadow transition */
 }
 
 .logoutButton:hover {
-  background-color: #d32f2f; /* Darker shade on hover */
+  background-color: #d32f2f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .appName {
+  display: flex;
+  flex-direction: column; /* Arranges children vertically */
+  justify-content: flex-start; /* Aligns children to the top */
+  align-items: flex-start; /* Aligns items to the start, affecting their horizontal alignment */
   text-align: left;
-  color: white;
-  font-size: 1.5rem; /* Adjust the size as needed */
-  margin-right: auto; /* Push everything else to the right */
+  color: rgb(113, 40, 109);
+  font-size: 3rem;
+  margin-right: auto;
 }
 
 .appName h1 {
@@ -71,3 +104,15 @@
   font-size: 1rem;
   margin-top: 5px;
 }
+
+/* Adding Shanghai Sharks copyright at the bottom */
+.footer {
+  text-align: center;
+  position: fixed; /* Keeps the footer at the bottom */
+  left: 0;
+  bottom: 10px; /* Adjust based on preference */
+  width: 100%;
+  color: #3b5998; /* Footer text color */
+  font-size: 1rem;
+}
+

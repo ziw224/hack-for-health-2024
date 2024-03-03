@@ -10,7 +10,7 @@ const MainHome = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      navigate('/login'); // Redirect to login page after successful logout
+      navigate("/login"); // Redirect to login page after successful logout
     } catch (error) {
       console.error("Logout Error:", error);
       // Handle logout error (e.g., display an error message)
@@ -19,11 +19,11 @@ const MainHome = () => {
 
   return (
     <div className="mainHome">
+      <div className="appName">
+        <h1>Solace Space</h1> {/* Application name */}
+        <p>A safe place to share and heal together.</p>
+      </div>
       <nav className="navigationBar">
-        <div className="appName">
-          <h1>Solace Space</h1> {/* Application name */}
-          <p>A safe place to share and heal together.</p>
-        </div>
         <Link to="/chatroom" className="navLink">
           Chat Room
         </Link>
@@ -34,6 +34,9 @@ const MainHome = () => {
           Logout
         </button>
       </nav>
+      {/* <footer className="footer">
+         @ 2024 Shanghai Sharks. All rights reserved.
+      </footer> */}
     </div>
   );
 };
