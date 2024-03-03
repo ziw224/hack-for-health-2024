@@ -16,6 +16,9 @@ const MainHome = () => {
       // Handle logout error (e.g., display an error message)
     }
   };
+   const redirectToMap = () => {
+    window.location.href = "http://localhost:8080"; // Redirect to the specified URL
+  };
 
   return (
     <div className="mainHome">
@@ -27,9 +30,9 @@ const MainHome = () => {
         <Link to="/chatroom" className="navLink">
           Chat Room
         </Link>
-        <Link to="/map" className="navLink">
+        <button onClick={redirectToMap} className="mapButton">
           Map
-        </Link>
+        </button>
         <button onClick={handleLogout} className="logoutButton">
           Logout
         </button>

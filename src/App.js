@@ -38,7 +38,7 @@ function App() {
               <Home />
             </ProtectedRoute>
           }/>
-          {/* <Route path="map" element={<Map />} /> */}
+          <Route path="localhost:8080"/>
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
