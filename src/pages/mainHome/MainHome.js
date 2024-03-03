@@ -16,23 +16,20 @@ const MainHome = () => {
       // Handle logout error (e.g., display an error message)
     }
   };
-   const redirectToMap = () => {
-    window.location.href = "http://localhost:8080"; // Redirect to the specified URL
-  };
 
   return (
     <div className="mainHome">
       <nav className="navigationBar">
         <div className="appName">
-          <h1>Harbor Haven</h1> {/* Application name */}
+          <h1>Solace Space</h1> {/* Application name */}
           <p>A safe place to share and heal together.</p>
         </div>
         <Link to="/chatroom" className="navLink">
           Chat Room
         </Link>
-        <button onClick={redirectToMap} className="mapButton">
+        <a href="http://localhost:8080" className="navLink">
           Map
-        </button>
+        </a>
         <button onClick={handleLogout} className="logoutButton">
           Logout
         </button>

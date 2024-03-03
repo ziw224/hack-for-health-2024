@@ -53,32 +53,6 @@
   background-color: #d32f2f; /* Darker shade on hover */
 }
 
-.mapButton {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  /* Slightly larger font size for readability */
-  padding: 15px 25px;
-  /* Increase padding for a larger clickable area */
-  border-radius: 15px;
-  /* Slightly larger border-radius */
-  transition: background-color 0.3s ease;
-}
-
-.mapButton:hover {
-  background-color: #4b70dd;
-}
-
-/* Additional styles to make it resemble .navLink */
-.mapButton {
-  font-size: 20px;
-  /* Slightly larger font size for readability */
-  padding: 15px 25px;
-  /* Increase padding for a larger clickable area */
-  border-radius: 15px;
-  /* Slightly larger border-radius */
-}
-
 .appName {
   text-align: left;
   color: white;
