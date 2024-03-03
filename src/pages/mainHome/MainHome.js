@@ -20,7 +20,7 @@ const MainHome = () => {
   return (
     <div className="mainHome">
       <div className="appName">
-        <h1>Solace Space</h1> {/* Application name */}
+        <h1>SafeSpace</h1> {/* Application name */}
         <p>A safe place to share and heal together.</p>
       </div>
       <nav className="navigationBar">
