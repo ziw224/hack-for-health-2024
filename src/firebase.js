@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBGU3jrgxvjcuTl6zpWw8Z2AYd1SBv1e_U",
+  apiKey: "your_firebase_api_key",
   authDomain: "chat-e6d6a.firebaseapp.com",
   projectId: "chat-e6d6a",
   storageBucket: "chat-e6d6a.appspot.com",
