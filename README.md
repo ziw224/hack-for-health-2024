@@ -4,7 +4,7 @@
 
 Lehigh Hack for Health 2024 is dedicated to addressing the critical issue of mental health among students at Lehigh University. Our innovative solution is an anonymous location-based map service designed to connect individuals facing similar mental health challenges. By fostering a supportive community where students can openly share and connect without the fear of stigma, we aim to create a safe space that promotes mental well-being.
 
-<img src="./public/homepage.png" width="128"/>
+<img src="./public/homepage.png" width=100%/>
 
 ## Features
 
