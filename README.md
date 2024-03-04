@@ -78,7 +78,7 @@ We welcome contributions from the community. Whether you have ideas for new feat
 
 ## Contact
 
-Project Link: [https://github.com/ziw224/hack-for-health-2024](https://github.com/ziw224/hack-for-health-2024)
+Project Link (Presentation Slide): [https://docs.google.com/presentation/d/1OvPaBZGU9NNMaM26LHm_OsyK4t8ROcTCa5FfOLzjWOc/edit#slide=id.g2bef5090e47_0_94](https://docs.google.com/presentation/d/1OvPaBZGU9NNMaM26LHm_OsyK4t8ROcTCa5FfOLzjWOc/edit#slide=id.g2bef5090e47_0_94)
 
 For any queries, please reach out to us at [zihan.wang@lehigh.edu](zihan.wang@lehigh.edu).
 
