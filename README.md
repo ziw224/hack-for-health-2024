@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Lehigh Hack for Health 2024 is dedicated to addressing the critical issue of mental health among students at Lehigh University. Our innovative solution is an anonymous location-based map service designed to connect individuals facing similar mental health challenges. By fostering a supportive community where students can openly share and connect without the fear of stigma, we aim to create a safe space that promotes mental well-being.
+Lehigh Hack for Health 2024 is dedicated to designing a technology-based solution aimed at tackling specific issues within the broad spectrum of the healthcare field. The challenges to be tackled include nutrition, accessibility, social health, active lifestyle, mental health, patient care, and more. **Our innovative solution is an anonymous location-based map service designed to connect individuals facing similar mental health challenges.** By fostering a supportive community where students can openly share and connect without fear of stigma, we aim to create a safe space that promotes mental well-being.
 
 <img src="./public/homepage.png" width=100%/>
 
@@ -34,7 +34,7 @@ Lehigh Hack for Health 2024 is dedicated to addressing the critical issue of men
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourproject/lehigh-hack-for-health-2024.git
+   git clone https://github.com/ziw224/hack-for-health-2024.git
    cd lehigh-hack-for-health-2024
    ```
 
@@ -58,7 +58,6 @@ Lehigh Hack for Health 2024 is dedicated to addressing the critical issue of men
 
    ```plaintext
    REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-   REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
    ```
 
 5. **Start the Development Server**

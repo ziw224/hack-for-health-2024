@@ -7,7 +7,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 const firebaseConfig = {
-    apiKey: "your private api key",
+    apiKey: "your-api-key",
     authDomain: "chat-e6d6a.firebaseapp.com",
     projectId: "chat-e6d6a",
     storageBucket: "chat-e6d6a.appspot.com",
@@ -26,9 +26,9 @@ admin.initializeApp(firebaseConfig)
 // const mongoose = require('mongoose');
 
 // const dev_db_url =
-//   "mongodb+srv://dbuser:admin@cluster0.afn1qa6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+//   "your_mongodb_url";
 
-// const url = "mongodb+srv://dbuser:admin@cluster0.afn1qa6.mongodb.net/"
+// const url = "your_mogodb_url/"
 
 // mongoose.connect(dev_db_url);
 
